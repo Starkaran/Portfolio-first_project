@@ -138,13 +138,16 @@ section.about p{
 
 section.about .social{
     display: flex;
+
 }
 
 section.about .social a{
     background: var(--dark);
+    color: var(--primary);
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -152,15 +155,11 @@ section.about .social a{
     transition: all .3s ease;
 }
 
-section.about .social a img:hover{
+section.about .social a:hover{
     background: var(--primary);
-    color: var(--primary);
+    color: var(--pure);
 }
-section.about .social a img{
-    width: 40px;
-    height: 40px;
-    padding: 0.1rem;
-}
+
 
 .section-heading{
     color: var(--secondary);
@@ -455,7 +454,7 @@ section.contact .btn-wrapper{
 footer{
     background: var(--dark);
     text-align: center;
-    padding: 5rem 0;
+    padding: 4rem 0;
 }
 
 footer .footer-logo{
@@ -464,9 +463,14 @@ footer .footer-logo{
 }
 footer .footer-socials a{
     margin-right: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all .3s ease;
+    color: var(--primary);
 }
-footer .footer-socials a img{
+footer .footer-socials a:hover{
     border-radius: 50%;
+    color: var(--light);
 }
 footer .footer-socials{
     margin-bottom: 3rem;
