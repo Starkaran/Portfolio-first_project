@@ -509,8 +509,11 @@ footer .copyright{
     top: 0;
     left: 0;
     z-index: 1001;
+    padding: 5rem 2rem;
+    text-align: center;
     background: var(--light);
-    width: 100%;
+    background-color: var(--primary);
+    width: 30%;
     height: 100%;
     padding: 2rem;
     padding-top: 5rem;
@@ -535,11 +538,24 @@ footer .copyright{
 }
 .mobile-nav ul{
     list-style-type: none;
+    display: block;
+    padding-top: 3rem;
 }
 .mobile-nav ul li a{
     color: var(--secondary);
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 2rem;
+    transition: all .3s ease;
+}
+.mobile-nav ul li a:hover{
+    letter-spacing: .2rem;
+    color: var(--pure);
+}
+@media (max-width: 768px){
+    .site-main-wrapper{
+        display: none;
+    }
 }
 
 @media (max-width: 1024px){
